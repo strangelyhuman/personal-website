@@ -1,9 +1,53 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
+html,body{
+	height: 100%;
+}
+
+/*CSS for Navbar */
+.navbar-custom {
+	background-color:#fcfcfc;
+    color:#ffffff;
+  	border-radius:0;
+  	box-shadow: 0px 2px 2px rgba(72,72,72,0.4);
+  	font-family: 'Oswald', sans-serif;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#2182BA;
+  	padding-left:20px;
+  	padding-right:20px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #000000;
+	background-color: transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+ 	color: white;
+    background-color: #185E87;
+}
+      
+.navbar-custom .navbar-brand {
+  	color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#33aa33;
+}
+
+#brand{
+	color: #666666;
+}
+
 /*Common CSS for TextBlock */
 
 .textblock{
+	height: 100%;
 	margin: 40px 0 40px 0;	
 	padding: 20px 20px 20px 20px;
 	text-align: center;

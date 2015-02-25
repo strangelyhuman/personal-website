@@ -5,8 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<!--Navbar Comes Here-->
+	<%= render '/layouts/navbar' %>
 	<div class="container">
 		<%= yield %>
 	</div>
