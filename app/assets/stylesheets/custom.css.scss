@@ -83,7 +83,7 @@ html,body{
 /*CSS for individual blocks*/
 #section1{
 	height: 100vh;
-	background: url("section1.jpg");
+	background-image: image-url("section1.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #FEFEFE;
@@ -94,7 +94,7 @@ html,body{
 
 #section3{
 	height: 50vh;
-	background: url("section3.jpg");
+	background-image: image-url("section3.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #FEFEFE;
