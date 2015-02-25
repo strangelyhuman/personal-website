@@ -1,17 +1,22 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
+/*Declaring my variables*/
+
 html,body{
 	height: 100%;
 }
+
 
 /*CSS for Navbar */
 .navbar-custom {
 	background-color:#fcfcfc;
     color:#ffffff;
   	border-radius:0;
-  	box-shadow: 0px 2px 2px rgba(72,72,72,0.4);
+  	box-shadow: 0px 3px 5px rgba(72,72,72,0.4);
   	font-family: 'Oswald', sans-serif;
+  	height: 52px;
+
 }
   
 .navbar-custom .navbar-nav > li > a {
@@ -21,13 +26,15 @@ html,body{
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #000000;
-	background-color: transparent;
+	/*background-color: transparent;*/
 }
       
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
- 	color: white;
-    background-color: #185E87;
+ 	/*color: white;*/
+ 	border-bottom: 4px solid #185E87;
+    /*background-color: #185E87;*/
+    transition: background-color 0.8s ease-out;
 }
       
 .navbar-custom .navbar-brand {
@@ -46,8 +53,10 @@ html,body{
 
 /*CSS for the Body*/
 #propic{
-	text-align: center;
-	margin: 0 auto;
+	border-radius: 50%;
+	margin: 30px 0 20px 0;
+	height: 195px;
+	width: 200px;
 }
 
 /*Common CSS for TextBlock */
@@ -59,11 +68,35 @@ html,body{
 	text-align: center;
 	h1{
 		margin: 15px 0 15px 0;
+		font-family: 'Lato', sans-serif;
 	}
 	h2{
 		margin: 10px 0 10px 0;
 	}
 	p{
 		margin: 10px 0 10px 0;
+		font-size: 18px;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
+}
+
+/*CSS for individual blocks*/
+#section1{
+	height: 100vh;
+	background: url("section1.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #FEFEFE;
+}
+
+#section2{
+	background-color: #ccc;
+}
+
+#section3{
+	height: 50vh;
+	background: url("section2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #FEFEFE;
 }
